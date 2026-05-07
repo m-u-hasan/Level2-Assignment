@@ -49,11 +49,6 @@ function toggleReadStatus (book: Book):Book & {isRead: boolean}
     };
 }
 
-const myBook={
-    title: "Typescript Guide",
-    author: "jane doe",
-    publishedYear: 2004,
-};
 
 //Problem-6: A Person Class & subClass Student
 
