@@ -35,11 +35,19 @@ console.log(checkType(4555));
 function getProperty<T, K extends keyof T> (obj: T, key: K): T[K]{
     return obj[key];
 }
-
 const user={
     id: 1,
     name: "John Doe",
     age: 21,
 };
-
 console.log(getProperty(user, "name"));
+
+
+//Problem-7: Return a new arry containing only the elements that ar present in both array
+
+function getIntersection(firstArray:number[], secondArray: number[]):number[]
+{
+    return firstArray.filter((item)=>secondArray.includes(item));
+}
+console.log(getIntersection([1,2,3,4,5],[2,3,7,8]));
+
